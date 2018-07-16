@@ -1,3 +1,23 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>User Change BG - Test</title>
+    <script>
+      function changeBG(number) {
+				var element = document.getElementById("bgChoice" + number);
+				var bgElement = document.getElementById("background");
+				bgElement.setAttribute(src, element);
+			}
+			function makeBG(elementId) {
+				var element = document.getElementById(elementId);
+				element.setAttribute(id, "background");
+			}
+    </script>
+  </head>
+  <body>
+    <img src="D:\Pic\6e609595.jpg" alt="default bg image" width="500" id="bgChoice1" onclick="makeBG(bgChoice1)">
+    <img src="D:\Pic\Widescreen-Fantasy-World.jpg" alt="bg image choice" width="500" id="bgChoice2" onclick="makeBG(bgChoice2)">
+    <img src="D:\Pic\sunny.jpg" alt="bg image choice" width="500" id="bgChoice3" onclick="makeBG(bgChoice3)">
+    <img src="D:\Pic\tumblr_nf58v6EwVO1txilm9o4_400.gif" alt="bg image choice" width="500" id="bgChoice4" onclick="makeBG(bgChoice4)">
+  </body>
 </html>
